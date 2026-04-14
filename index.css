@@ -1,0 +1,61 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at center, #035274, #020c1b);
+}
+
+.jam-box {
+    background: #1f2a44;
+    padding: 40px 80px;
+    border-radius: 20px;
+    text-align: center;
+
+
+    box-shadow: 
+        0 0 20px #00f2ff,
+        0 0 40px #00c6ff,
+        0 0 80px rgba(0, 198, 255, 0.5);
+}
+
+
+#tanggal {
+    color: #e0e0e0;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#waktu {
+    font-size: 80px;
+    font-weight: bold;
+    color: #c0dddf;
+
+    text-shadow:
+        0 0 10px #6a9a9d,
+        0 0 20px #175769,
+        0 0 40px #2b3d42;
+}
+
+
+@media (max-width: 600px) {
+    .jam-box {
+        padding: 25px 40px;
+    }
+
+    #waktu {
+        font-size: 50px;
+    }
+
+    #tanggal {
+        font-size: 16px;
+    }
+}
